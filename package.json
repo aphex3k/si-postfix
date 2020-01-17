@@ -1,0 +1,27 @@
+{
+  "name": "si-postfix",
+  "version": "1.0.4",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "test": "./node_modules/.bin/mocha --reporter spec --require ts-node/register lib/**/*.test.ts && npm run build && ./node_modules/.bin/mocha --reporter spec dist/**/*.test.js"
+  },
+  "keywords": [
+    "postfix",
+    "si",
+    "name"
+  ],
+  "author": "Michael Henke",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
