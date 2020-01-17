@@ -1,3 +1,6 @@
 lib/
 dist/*.test.js
 dist/*.test.d.ts
+.travis.yml
+si-postfix.code-workspace
+.gitignore

@@ -1,6 +1,6 @@
 {
   "name": "si-postfix",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,6 +14,14 @@
     "si",
     "name"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aphex3k/si-postfix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aphex3k/si-postfix/issues"
+  },
+  "homepage": "https://github.com/aphex3k/si-postfix#readme",
   "author": "Michael Henke",
   "license": "ISC",
   "devDependencies": {
