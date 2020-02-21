@@ -4,8 +4,8 @@
  * See: https://en.wikipedia.org/wiki/Long_and_short_scales
  */
 enum Scale {
-  Short,
-  Long
+  Short = "Short",
+  Long = "Long"
 }
 
 export default Scale;

@@ -1,12 +1,26 @@
 import * as chai from "chai";
-import * as mocha from "mocha";
 
 import Scale from "./scale";
-import { postfix } from "./";
+import postfix from ".";
 
 const expect = chai.expect;
 
 describe("Si-postfix should convert", () => {
+  it("1.0 to 1.0", () => {
+    expect(postfix(1.0, 1)).to.equal("1.0");
+  });
+  it("10.0 to 10.0", () => {
+    expect(postfix(10, 1)).to.equal("10.0");
+  });
+  it("9.0 to 9.0", () => {
+    expect(postfix(9, 1)).to.equal("9.0");
+  });
+  it("99.0 to 99.0", () => {
+    expect(postfix(99, 1)).to.equal("99.0");
+  });
+  it("999.0 to 999.0", () => {
+    expect(postfix(999, 1)).to.equal("999.0");
+  });
   it("-1 to -1", () => {
     expect(postfix(-1)).to.equal("-1");
   });
@@ -15,6 +29,9 @@ describe("Si-postfix should convert", () => {
   });
   it("1 to 1", () => {
     expect(postfix(1)).to.equal("1");
+  });
+  it("10 to 10", () => {
+    expect(postfix(10)).to.equal("10");
   });
   it("1 234 to 1k", () => {
     expect(postfix(1234)).to.equal("1k");
