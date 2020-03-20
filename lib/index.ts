@@ -15,7 +15,7 @@ function postfix(
   number: number,
   p2?: Scale | string | number | undefined
 ): string {
-  if (number === 0) {
+  if (number < 1 && number >= 0) {
     if (typeof p2 === "number") {
       return number.toFixed(p2);
     } else {

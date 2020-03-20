@@ -4,3 +4,6 @@ dist/*.test.d.ts
 .travis.yml
 si-postfix.code-workspace
 .gitignore
+.eslintignore
+.eslintrc.js
+tsconfig.json
