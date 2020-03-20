@@ -6,6 +6,9 @@ import postfix from ".";
 const expect = chai.expect;
 
 describe("Si-postfix should convert", () => {
+  it("0.0466461423640265 to 0.0", () => {
+    expect(postfix(0.0466461423640265, 1)).to.equal("0.0");
+  });
   it("1.0 to 1.0", () => {
     expect(postfix(1.0, 1)).to.equal("1.0");
   });
